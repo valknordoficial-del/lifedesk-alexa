@@ -34,7 +34,7 @@ Agent value appears after summarisation. The important moment is when the assist
 A production version would add OCR/document parsing, authenticated email/calendar integrations, consent gates, encrypted retention controls, configurable action policies and explicit human approval before any external side effect.
 
 ## Live demo
-https://lifedesk-alexa.floot.app
+https://valknordoficial-del.github.io/lifedesk-alexa/
 
 ## Repository
 https://github.com/valknordoficial-del/lifedesk-alexa
@@ -46,4 +46,4 @@ Alexa+ — simulated experience (alternate path). No AWS mini-challenge is claim
 Run the static app as described in README.md. Select each of the three synthetic samples and press Next step six times. Inspect facts, explanation, plan, response, suggested reminders and the audit trail. Edit the response at Draft, then advance or switch samples and return: edits remain for the tab session. Reset returns to Read. The guided demo advances all seven stages automatically.
 
 ## Submission status
-Written materials prepared. A functioning demonstration must be recorded and uploaded publicly to YouTube or Vimeo, and its exact URL added to Devpost. No video URL or submitted-entry confirmation is available yet.
+Source, documentation, MIT license and three passing workflow tests are published. The public GitHub Pages demo has been checked for all three sample contexts and draft retention. An English 128-second video has been assembled from live browser captures with explanatory on-screen text. It must still be uploaded publicly to YouTube or Vimeo and its exact URL added to Devpost. No submitted-entry confirmation is available yet.
