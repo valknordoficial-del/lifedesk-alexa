@@ -1,0 +1,76 @@
+# LifeDesk — simulated Alexa+ agentic document-to-action assistant
+
+**Live demo:** https://lifedesk-alexa.floot.app
+
+LifeDesk is a prototype for the **Amazon Build, Ship, Shape Developer Hackathon 2026 — Alexa+ track**. It demonstrates a simulated Alexa+ experience that turns a confusing document into a transparent sequence of actions rather than stopping at a summary.
+
+## What it does
+
+A user selects a synthetic sample document and LifeDesk coordinates a multi-step workflow:
+
+1. Read document context
+2. Extract facts and deadlines
+3. Explain the document in plain language
+4. Create an ordered action plan
+5. Draft an editable response
+6. Propose reminders
+7. Show an audit trail linking source facts → inference → action
+
+## Why it is agentic
+
+LifeDesk keeps context across dependent steps and uses one stage to determine the next. It is intentionally more than single-turn Q&A. The user remains in control: drafts and reminders are proposed rather than silently executed.
+
+## Alexa+ simulation
+
+This submission is clearly labelled as a **simulated Alexa+ experience**. The core voice-oriented request is:
+
+> “Alexa, what do I need to do about this letter?”
+
+The prototype demonstrates orchestration and interaction design. A production implementation could connect the same action graph to document parsing, calendars, email and other authenticated tools.
+
+## Privacy and safety
+
+- All built-in samples are fictional and contain no personal data.
+- No real document is required for judging.
+- Extracted facts and generated inferences are visibly separated.
+- LifeDesk does **not** provide legal, financial, medical or professional advice.
+- External actions would require explicit user approval in production.
+
+## Run locally
+
+No build step is required. Open `index.html` in a browser, or serve the folder with any static web server.
+
+## Repository map
+
+- `index.html` — complete judge-facing interface
+- `app.js` — multi-step agentic simulation logic
+- `styles.css` — responsive UI
+- `docs/submission.md` — Devpost submission draft
+- `docs/friction-log.md` — product/developer feedback
+- `docs/video-script.md` — demo video script under 3 minutes
+- `LICENSE` — MIT license
+
+## 3-minute judge flow
+
+Open the live demo and choose **Run guided judge demo**. Watch the sequence advance through extraction, explanation, planning, drafting, reminders and auditability. Then switch sample documents to see the same workflow adapt to a different context.
+
+## Status
+
+Technical prototype; submission is not complete until the demo video is publicly hosted and the Devpost entry is submitted. The existing Floot URL may be an earlier build; the repository is the canonical source for this revision.
+
+## Reproducible testing
+
+Use Node.js 18 or later and run `node --test tests/workflow.test.cjs`. No npm packages are required.
+For a local web preview run `python3 -m http.server 8080`, then open http://localhost:8080.
+
+## Honest scope
+
+This is a deterministic interaction simulation, not an LLM document parser, live Alexa integration, or MCP server. Facts, plans and response templates are predefined per sample. The seven-stage controller retains context and advances the workflow; it does not infer new plans from arbitrary uploads. Draft edits persist across stages and sample switches within the current tab, and reset on reload. Reminders are suggestions only. The clock is fixed at 4 October 2026 for reproducibility. No emails, calendar events, or reminders are actually sent or scheduled.
+
+## Submission route
+
+Alexa+ **simulated experience**, under the alternate path in the official rules:
+https://amazonappdev2026.devpost.com/rules
+No gated Alexa SDK or MCP conformance is claimed.
+
+Repository: https://github.com/valknordoficial-del/lifedesk-alexa

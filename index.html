@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="LifeDesk — simulated Alexa+ agentic document-to-action assistant" />
+  <title>LifeDesk — Alexa+ Simulation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="mark">✦</span>LifeDesk</a>
+    <nav><a href="#demo">Demo</a><a href="#privacy">Privacy</a><a href="#judges">For judges</a></nav>
+    <span class="pill">Alexa+ simulation</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AGENTIC DOCUMENT-TO-ACTION ASSISTANT</p>
+        <h1>Your paperwork should become a plan, not another task.</h1>
+        <p class="lede">LifeDesk is a simulated Alexa+ experience that turns a confusing document into facts, deadlines, actions, a draft response, reminders and a traceable audit trail — in one continuous flow.</p>
+        <div class="actions"><button id="autoDemo">▶ Run guided judge demo</button><a class="button secondary" href="#demo">Explore manually</a></div>
+        <div class="trust"><span>✓ Synthetic samples</span><span>✓ No account required</span><span>✓ No private upload needed</span></div>
+      </div>
+      <aside class="voice-card">
+        <div class="orb">◉</div>
+        <small>SIMULATED ALEXA+ INTERACTION</small>
+        <blockquote>“Alexa, what do I need to do about this letter?”</blockquote>
+        <div class="reply"><strong>LifeDesk</strong><p>I found a deadline, requested documents, and a clear next-action sequence. I can draft the response and propose a follow-up reminder next.</p></div>
+      </aside>
+    </section>
+
+    <section class="workspace" id="demo">
+      <div class="section-head"><div><p class="eyebrow">INTERACTIVE PROTOTYPE</p><h2>One document. Seven coordinated agent steps.</h2></div><div class="controls"><button id="reset" class="ghost">↻ Reset</button><button id="next">Next step →</button></div></div>
+      <div class="sample-tabs" id="sampleTabs"></div>
+      <div class="stepper" id="stepper"></div>
+      <div class="demo-grid">
+        <article class="document-card">
+          <div class="card-row"><span class="pill muted" id="category"></span><code>SYNTHETIC</code></div>
+          <h3 id="docTitle"></h3><p class="muted-text">Synthetic sample — no personal data</p>
+          <div class="fake-doc"><code id="reference"></code><h4>Important notice</h4><p id="docSummary"></p><ul id="sourceFacts"></ul><p>Please review the requested action and complete it before <strong id="deadlineInline"></strong>.</p><p>This demonstration text is fictional and contains no personal information. Scenario date: <span id="scenarioDate"></span>.</p></div>
+        </article>
+        <article class="agent-card">
+          <div class="agent-head"><strong><span class="dot"></span> Agent workspace</strong><span class="pill muted" id="currentStep">Read</span></div>
+          <div id="results" class="results" aria-live="polite"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles"><article><h3>Not just Q&A</h3><p>LifeDesk retains context and coordinates dependent actions in sequence.</p></article><article><h3>Traceable by design</h3><p>Recommendations connect to extracted facts or clearly labelled inferences.</p></article><article><h3>Human stays in control</h3><p>Drafts and reminders are proposed, not silently executed.</p></article></section>
+
+    <section class="privacy" id="privacy"><div class="shield">✓</div><div><p class="eyebrow">PRIVACY-FIRST DEMO</p><h2>Judge it without sharing a single real document.</h2><p>All included examples are fictional. This prototype requires no sign-in, payment, API key or personal upload. A production version would minimise retention and require explicit approval before external actions.</p></div></section>
+
+    <section class="judges" id="judges">
+      <p class="eyebrow">JUDGE BRIEFING</p><h2>LifeDesk turns documents into accountable action.</h2>
+      <div class="judge-grid"><article><strong>01 — Run the guided demo</strong><p>Use the finance sample and let the workflow advance through every agent stage.</p></article><article><strong>02 — Inspect the reasoning trail</strong><p>Compare source fact, inference and proposed action at the final stage.</p></article><article><strong>03 — Switch context</strong><p>Try the warranty or appointment examples to see the same action model adapt.</p></article></div>
+      <div class="architecture"><span>Document context</span><b>→</b><span>Structured facts</span><b>→</b><span>Action graph</span><b>→</b><span>Human-approved outputs</span></div>
+      <h3>What is simulated vs functional</h3>
+      <ul><li><strong>Simulated:</strong> the Alexa+ conversational surface and external execution of reminders/messages.</li><li><strong>Functional:</strong> sample selection, multi-step state, editable response drafts, contextual outputs, guided demo and audit trail. All interpretation and output content is predefined; no LLM or real Alexa service is called.</li><li><strong>Production path:</strong> document parser/OCR, authenticated calendar/email tools, consent gates and encrypted retention.</li></ul>
+    </section>
+  </main>
+
+  <footer><p><strong>Important:</strong> LifeDesk organises and summarises information. It is not legal, financial, medical or professional advice and does not guarantee that an interpretation is correct.</p><p>Amazon Build, Ship, Shape Developer Hackathon 2026 — Alexa+ simulated experience.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
