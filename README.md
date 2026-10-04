@@ -56,7 +56,7 @@ Open the live demo and choose **Run guided judge demo**. Watch the sequence adva
 
 ## Status
 
-Technical prototype; submission is not complete until the demo video is publicly hosted and the Devpost entry is submitted. GitHub Pages serves this repository revision. Source files, English submission materials and workflow tests are published.
+Technical prototype; the English demo video is publicly hosted on YouTube. Submission is not complete until the Devpost entry is submitted. GitHub Pages serves this repository revision. Source files, English submission materials and workflow tests are published.
 
 ## Reproducible testing
 
@@ -77,4 +77,4 @@ Repository: https://github.com/valknordoficial-del/lifedesk-alexa
 
 ## Verified release
 
-All 11 source and documentation files were verified against GitHub blob hashes after upload. The three workflow tests passed; all three contexts and tab-session draft persistence were also checked on the published site. An English demo video was assembled from live browser captures (128 seconds, on-screen captions, no audio). It still needs public YouTube/Vimeo hosting for the competition.
+All 11 source and documentation files were verified against GitHub blob hashes after upload. The three workflow tests passed; all three contexts and tab-session draft persistence were also checked on the published site. An English demo video was assembled from live browser captures (128 seconds, on-screen captions, no audio). Public video: https://www.youtube.com/watch?v=m-URkrDUMeg&feature=youtu.be. Published on October 4, 2026; YouTube completed its initial checks without finding problems.
