@@ -1,6 +1,6 @@
 # LifeDesk — simulated Alexa+ agentic document-to-action assistant
 
-**Live demo:** https://lifedesk-alexa.floot.app
+**Live demo:** https://valknordoficial-del.github.io/lifedesk-alexa/
 
 LifeDesk is a prototype for the **Amazon Build, Ship, Shape Developer Hackathon 2026 — Alexa+ track**. It demonstrates a simulated Alexa+ experience that turns a confusing document into a transparent sequence of actions rather than stopping at a summary.
 
@@ -56,7 +56,7 @@ Open the live demo and choose **Run guided judge demo**. Watch the sequence adva
 
 ## Status
 
-Technical prototype; submission is not complete until the demo video is publicly hosted and the Devpost entry is submitted. The existing Floot URL may be an earlier build; the repository is the canonical source for this revision.
+Technical prototype; submission is not complete until the demo video is publicly hosted and the Devpost entry is submitted. GitHub Pages serves this repository revision. Source files, English submission materials and workflow tests are published.
 
 ## Reproducible testing
 
@@ -74,3 +74,7 @@ https://amazonappdev2026.devpost.com/rules
 No gated Alexa SDK or MCP conformance is claimed.
 
 Repository: https://github.com/valknordoficial-del/lifedesk-alexa
+
+## Verified release
+
+All 11 source and documentation files were verified against GitHub blob hashes after upload. The three workflow tests passed; all three contexts and tab-session draft persistence were also checked on the published site. An English demo video was assembled from live browser captures (128 seconds, on-screen captions, no audio). It still needs public YouTube/Vimeo hosting for the competition.
